@@ -63,5 +63,191 @@ ON tca.country = e.country
 WHERE e.year BETWEEN 2006 AND 2018
 ORDER BY e.year;
 
+-- otázka 1--
+
+SELECT*
+FROM czechia_payroll_industry_branch;
+
+SELECT 
+     industry_branch_code,
+     payroll_year,
+     AVG(value) AS prumer
+FROM t_anna_petuchova_project_sql_primary_final 
+WHERE unit_code = 200
+AND industry_branch_code = 'A'
+GROUP BY payroll_year;
+
+
+SELECT 
+     industry_branch_code,
+     payroll_year,
+     AVG(value) AS prumer
+FROM t_anna_petuchova_project_sql_primary_final 
+WHERE unit_code = 200
+AND industry_branch_code = 'B'
+GROUP BY payroll_year;
+
+SELECT 
+     industry_branch_code,
+     payroll_year,
+     AVG(value) AS prumer
+FROM t_anna_petuchova_project_sql_primary_final 
+WHERE unit_code = 200
+AND industry_branch_code = 'C'
+GROUP BY payroll_year;
+
+SELECT 
+     industry_branch_code,
+     payroll_year,
+     AVG(value) AS prumer
+FROM t_anna_petuchova_project_sql_primary_final 
+WHERE unit_code = 200
+AND industry_branch_code = 'D'
+GROUP BY payroll_year;
+
+SELECT 
+     industry_branch_code,
+     payroll_year,
+     AVG(value) AS prumer
+FROM t_anna_petuchova_project_sql_primary_final 
+WHERE unit_code = 200
+AND industry_branch_code = 'E'
+GROUP BY payroll_year;
+
+SELECT 
+     industry_branch_code,
+     payroll_year,
+     AVG(value) AS prumer
+FROM t_anna_petuchova_project_sql_primary_final 
+WHERE unit_code = 200
+AND industry_branch_code = 'F'
+GROUP BY payroll_year;
+
+SELECT 
+     industry_branch_code,
+     payroll_year,
+     AVG(value) AS prumer
+FROM t_anna_petuchova_project_sql_primary_final 
+WHERE unit_code = 200
+AND industry_branch_code = 'G'
+GROUP BY payroll_year;
+
+SELECT 
+     industry_branch_code,
+     payroll_year,
+     AVG(value) AS prumer
+FROM t_anna_petuchova_project_sql_primary_final 
+WHERE unit_code = 200
+AND industry_branch_code = 'H'
+GROUP BY payroll_year;
+
+SELECT 
+     industry_branch_code,
+     payroll_year,
+     AVG(value) AS prumer
+FROM t_anna_petuchova_project_sql_primary_final 
+WHERE unit_code = 200
+AND industry_branch_code = 'I'
+GROUP BY payroll_year;
+
+SELECT 
+     industry_branch_code,
+     payroll_year,
+     AVG(value) AS prumer
+FROM t_anna_petuchova_project_sql_primary_final 
+WHERE unit_code = 200
+AND industry_branch_code = 'J'
+GROUP BY payroll_year;
+
+SELECT 
+     industry_branch_code,
+     payroll_year,
+     AVG(value) AS prumer
+FROM t_anna_petuchova_project_sql_primary_final 
+WHERE unit_code = 200
+AND industry_branch_code = 'K'
+GROUP BY payroll_year;
+
+SELECT 
+     industry_branch_code,
+     payroll_year,
+     AVG(value) AS prumer
+FROM t_anna_petuchova_project_sql_primary_final 
+WHERE unit_code = 200
+AND industry_branch_code = 'K'
+GROUP BY payroll_year;
+
+SELECT 
+     industry_branch_code,
+     payroll_year,
+     AVG(value) AS prumer
+FROM t_anna_petuchova_project_sql_primary_final 
+WHERE unit_code = 200
+AND industry_branch_code = 'L'
+GROUP BY payroll_year;
+
+SELECT 
+     industry_branch_code,
+     payroll_year,
+     AVG(value) AS prumer
+FROM t_anna_petuchova_project_sql_primary_final 
+WHERE unit_code = 200
+AND industry_branch_code = 'M'
+GROUP BY payroll_year;
+
+SELECT 
+     industry_branch_code,
+     payroll_year,
+     AVG(value) AS prumer
+FROM t_anna_petuchova_project_sql_primary_final 
+WHERE unit_code = 200
+AND industry_branch_code = 'N'
+GROUP BY payroll_year;
+
+SELECT 
+     industry_branch_code,
+     payroll_year,
+     AVG(value) AS prumer
+FROM t_anna_petuchova_project_sql_primary_final 
+WHERE unit_code = 200
+AND industry_branch_code = 'O'
+GROUP BY payroll_year;
+
+SELECT 
+     industry_branch_code,
+     payroll_year,
+     AVG(value) AS prumer
+FROM t_anna_petuchova_project_sql_primary_final 
+WHERE unit_code = 200
+AND industry_branch_code = 'P'
+GROUP BY payroll_year;
+
+SELECT 
+     industry_branch_code,
+     payroll_year,
+     AVG(value) AS prumer
+FROM t_anna_petuchova_project_sql_primary_final 
+WHERE unit_code = 200
+AND industry_branch_code = 'Q'
+GROUP BY payroll_year;
+
+SELECT 
+     industry_branch_code,
+     payroll_year,
+     AVG(value) AS prumer
+FROM t_anna_petuchova_project_sql_primary_final 
+WHERE unit_code = 200
+AND industry_branch_code = 'R'
+GROUP BY payroll_year;
+
+SELECT 
+     industry_branch_code,
+     payroll_year,
+     AVG(value) AS prumer
+FROM t_anna_petuchova_project_sql_primary_final 
+WHERE unit_code = 200
+AND industry_branch_code = 'S'
+GROUP BY payroll_year;
+
 
 
