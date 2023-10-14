@@ -249,5 +249,75 @@ WHERE unit_code = 200
 AND industry_branch_code = 'S'
 GROUP BY payroll_year;
 
+-- otázka 2 --
 
+SELECT*
+FROM t_anna_petuchova_project_sql_primary_final
+GROUP BY date_from;
+
+-- první výpočetní období 2006-01-02 1quarter --
+
+SELECT*
+FROM anna_petuchova_project_sql_primary_final
+GROUP BY date_from DESC;
+
+-- poslední výpočetní období 2018-12-10   4quarter --
+
+SELECT*
+FROM t_anna_petuchova_project_sql_primary_final
+WHERE unit_code = 200
+AND payroll_year = 2018
+AND payroll_quarter = 4
+AND value IS NOT NULL;
+
+-- kontrola jestli jsou údaje o mzdách --
+
+SELECT*
+FROM czechia_price_category;
+
+-- 111301 Chléb konzumní kmínový 1kg   114201 Mléko polotučné pasterované 1l --
+
+SELECT 
+      category_code,
+      AVG(value)/AVG(value_price) AS prumer
+FROM t_anna_petuchova_project_sql_primary_final
+WHERE category_code = 111301
+AND unit_code = 200
+AND payroll_year = 2006
+AND payroll_quarter = 1
+AND date_from >= '2006-01-02'
+AND date_from <= '2006-03-31';
+
+SELECT 
+      category_code,
+      AVG(value)/AVG(value_price) AS prumer
+FROM t_anna_petuchova_project_sql_primary_final
+WHERE category_code = 114201
+AND unit_code = 200
+AND payroll_year = 2006
+AND payroll_quarter = 1
+AND date_from >= '2006-01-02'
+AND date_from <= '2006-03-31';
+
+SELECT 
+      category_code,
+      AVG(value)/AVG(value_price) AS prumer
+FROM t_anna_petuchova_project_sql_primary_final
+WHERE category_code = 111301
+AND unit_code = 200
+AND payroll_year = 2018
+AND payroll_quarter = 4
+AND date_from >= '2018-10-01'
+AND date_from <= '2018-12-31';
+
+SELECT 
+      category_code,
+      AVG(value)/AVG(value_price) AS prumer
+FROM t_anna_petuchova_project_sql_primary_final
+WHERE category_code = 114201
+AND unit_code = 200
+AND payroll_year = 2018
+AND payroll_quarter = 4
+AND date_from >= '2018-10-01'
+AND date_from <= '2018-12-31';
 
